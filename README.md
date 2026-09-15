@@ -4,7 +4,7 @@ A C++ application for managing customers, products, and inventory in a simple wa
 
 The program imports structured data from a text file, validates and stores the data using object-oriented C++ classes, displays the resulting customers, product catalog, and inventory and exports the processed data to a new file.
 
-This project was originally developed as a university programming project for Ostbayerische Technische Hochschule Amberg-Weiden (OTH Amberg-Weiden).
+This project was originally developed as part of the Programming for AI 2 (C/C++) module at Ostbayerische Technische Hochschule Amberg-Weiden (OTH Amberg-Weiden).
 
 ## Features
 
