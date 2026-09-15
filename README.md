@@ -60,37 +60,29 @@ The project contains classes for the different parts of the warehouse system, in
 
 ### Requirements
 
-A C++ compiler with support for C++11 or newer is required. For example, [GCC](https://gcc.gnu.org/) with `g++`.
+A C++ compiler with support for C++11 or newer is required.
 
-You can check whether `g++` is installed with:
+The project has been tested on Windows using GCC/G++ through MSYS2 UCRT64.
+
+You can check whether `g++` is available with:
 
 ```bash
 g++ --version
 ```
 
-### Compile
-
-Open a terminal in the project directory and compile the source files:
-
-```bash
-g++ -std=c++11 *.cpp -o warehouse
-```
-
 ### Run
 
-On Windows:
+Open an MSYS2 UCRT64 terminal and navigate to the project directory.
+
+The repository includes the compiled executable `main.exe`, which can be run with:
 
 ```bash
-.\warehouse.exe
+./main.exe
 ```
 
-On Linux or macOS:
+The application expects `acme.load` to be located in the project directory.
 
-```bash
-./warehouse
-```
-
-The application expects `acme.load` to be located in the current project directory.
+During execution, the program reads and validates the input data and prints the customers, products, inventory, and any detected input errors to the terminal.
 
 After execution, the processed data is exported to:
 
