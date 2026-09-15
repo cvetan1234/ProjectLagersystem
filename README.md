@@ -4,7 +4,7 @@ A C++ application for managing customers, products, and inventory in a simple wa
 
 The program imports structured data from a text file, validates and stores the data using object-oriented C++ classes, displays the resulting customers, product catalog, and inventory and exports the processed data to a new file.
 
-This project was originally developed as a university programming project.
+This project was originally developed as a university programming project for Ostbayerische Technische Hochschule Amberg-Weiden (OTH Amberg-Weiden).
 
 ## Features
 
@@ -55,6 +55,48 @@ The project contains classes for the different parts of the warehouse system, in
 - `FileStore` – importing and exporting warehouse data
 - Custom exception classes for handling invalid data
 - `main.cpp` – application entry point
+
+## Building and Running
+
+### Requirements
+
+A C++ compiler with support for C++11 or newer is required. For example, [GCC](https://gcc.gnu.org/) with `g++`.
+
+You can check whether `g++` is installed with:
+
+```bash
+g++ --version
+```
+
+### Compile
+
+Open a terminal in the project directory and compile the source files:
+
+```bash
+g++ -std=c++11 *.cpp -o warehouse
+```
+
+### Run
+
+On Windows:
+
+```bash
+.\warehouse.exe
+```
+
+On Linux or macOS:
+
+```bash
+./warehouse
+```
+
+The application expects `acme.load` to be located in the current project directory.
+
+After execution, the processed data is exported to:
+
+```text
+export.txt
+```
 
 ## Input Data
 
@@ -111,7 +153,3 @@ export.txt
 ```
 
 containing the exported warehouse data.
-
-## About
-
-This project was originally developed as a university programming project and is preserved here as part of my programming portfolio.
